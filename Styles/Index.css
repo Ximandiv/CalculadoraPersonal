@@ -9,7 +9,8 @@
     width: 50vw;
     max-width: 300px;
     min-width: 200px;
-    height: 38vh;
+    height: 40vh;
+
 }
 
 #Calculator-Container{
@@ -33,7 +34,7 @@
 #Screen-Numbers{
     width: 80%;
     height: 30%;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 20px;
     text-align: end;
     font-size: 25px;
@@ -83,4 +84,59 @@ input{
     width: 21%;
     text-align: center;
     vertical-align: middle;
+}
+
+@media only screen and (max-width: 575px){
+    #Container{
+        margin: 200px auto;
+        background-color: aqua;
+        width: 50vw;
+    }
+    #Entries{
+        text-align: end;
+        padding-right: 5px;
+        padding-top: 5px;
+    }
+    #Entries-input{
+        font-size: 18px;
+        width: 30%;
+        padding-left: 10px;
+        background-color: unset;
+        border: none;
+        cursor: pointer;
+    }
+
+    #Numbers-Top, #Functions-Top, 
+    #Numbers-Middle, #Functions-Middle, 
+    #Numbers-Bottom, #Functions-Bottom{
+        padding-left: 8px;
+        gap: 2px;
+    }
+    input{
+        font-size: 14px;
+        width: 22%;
+        height: 35px;
+    }
+}
+@media only screen and (max-width: 485px){
+    #Numbers-Top, #Functions-Top, 
+    #Numbers-Middle, #Functions-Middle, 
+    #Numbers-Bottom, #Functions-Bottom{
+        padding-left: 8px;
+        gap: 2px;
+    }
+    input{
+        font-size: 14px;
+        width: 23%;
+        height: 35px;
+    }
+}
+@media only screen and (max-height: 841px){
+    #Screen-Numbers{
+        margin-top: 14px;
+    }
+    #Container{
+        max-height: 400px;
+        min-height: 350px;
+    }
 }
