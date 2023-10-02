@@ -3,8 +3,16 @@
     padding: 0;
 }
 
+#Title, #Title-Description{
+    text-align: center;
+    margin-top: 20px;
+}
+#Title-Description{
+    font-weight: lighter;
+}
+
 #Container{
-    margin: 200px auto;
+    margin: 50px auto;
     background-color: aqua;
     width: 50vw;
     max-width: 300px;
@@ -88,7 +96,7 @@ input{
 
 @media only screen and (max-width: 575px){
     #Container{
-        margin: 200px auto;
+        margin: 50px auto;
         background-color: aqua;
         width: 50vw;
     }
